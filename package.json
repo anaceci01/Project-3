@@ -34,6 +34,8 @@
         "prod": "node server.js",
         "heroku-postbuild": "npm run build",
         "seed": "node utils/scripts/seeds.js"
+
+
     },
     "engines": {
         "node": "12.13.0"
