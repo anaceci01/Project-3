@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Header } from '../../components';
+import SimpleCard from '../../components/SimpleCard';
 import "./home.css";
 
 export default class Home extends Component {
@@ -23,7 +24,11 @@ export default class Home extends Component {
 					<code>
 						{JSON.stringify(this.props)}
 					</code>
+					<div>
+					<SimpleCard />
 				</div>
+				</div>
+				
 			)
 		} else {
 			return (
@@ -33,6 +38,9 @@ export default class Home extends Component {
 					<code>
 						{JSON.stringify(this.props)}
 					</code>
+					<div>
+					<SimpleCard />
+				</div>
 				</div>
 			)
 		}
