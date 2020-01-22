@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Header } from '../../components';
-import SimpleCard from '../../components/SimpleCard';
 import "./home.css";
 
 export default class Home extends Component {
 	constructor(props) {
 		super(props)
+
 		this.state = {
-			user: props.user
+			user: this.props.user
 		}
 	}
 
@@ -16,16 +16,16 @@ export default class Home extends Component {
 	}
 
 	render() {
-		if (this.props.user) {
+		if (this.state.user) {
 			return (
 				<div className="Home">
-					<Header user={this.state.user} />
+					<Header user={this.props.user} />
 					<p>Current User:</p>
 					<code>
 						{JSON.stringify(this.props)}
 					</code>
 					<div>
-					<SimpleCard />
+					
 				</div>
 				</div>
 				
@@ -33,13 +33,12 @@ export default class Home extends Component {
 		} else {
 			return (
 				<div className="Home">
-					<Header user={this.state.user} />
+					<Header user={this.props.user} />
 					<p>Current User:</p>
 					<code>
 						{JSON.stringify(this.props)}
 					</code>
 					<div>
-					<SimpleCard />
 				</div>
 				</div>
 			)

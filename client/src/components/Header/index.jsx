@@ -1,22 +1,23 @@
 import React from 'react'
 import './header.css'
 
-const HeaderComponent = props => {
+const HeaderComponent = props =>  {
 	let Greeting
 	if (props.user === null) {
-		Greeting = <p>Hello guest</p>
+		Greeting = <p>Hello Guest</p>
 	} else if (props.user.firstName) {
-		Greeting = (
+		Greeting = 
 			<p>
 				Welcome back, <strong>{props.user.firstName}</strong>
 			</p>
-		)
+		console.log('firstname')
+		
 	} else if (props.user.local.username) {
-		Greeting = (
+		Greeting = 
 			<p>
 				Welcome back, <strong>{props.user.local.username} </strong>
 			</p>
-		)
+		console.log('username')
 	}
 	return (
 		<div className="Header">
