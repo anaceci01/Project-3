@@ -1,0 +1,40 @@
+img {
+    vertical-align: middle;
+    border-style: none;
+    height: 50px;
+}
+
+
+/* Navbar */
+
+.navbar.navbar-light.bg-dark {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: white;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: white;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #B8C5D6;
+}
+
+
+/* selected link */
+
+a:active {
+    color: #B8C5D6;
+}
