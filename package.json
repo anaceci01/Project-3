@@ -33,6 +33,7 @@
 		"build": "cd client && npm run build",
 		"prod": "node server.js",
 		"heroku-postbuild": "npm run build",
+		"server": "nodemon server.js",
 		"seed": "node utils/scripts/seeds.js"
 	},
 	"engines": {
