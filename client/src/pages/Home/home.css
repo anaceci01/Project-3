@@ -1,5 +1,7 @@
 body {
-    background-color: #BCEBCB;
+    background-color: white;
     font-family: 'Roboto Mono', monospace;
-    color: white;
+    color: black;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
 }

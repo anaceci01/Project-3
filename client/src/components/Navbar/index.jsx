@@ -5,6 +5,9 @@ import './navbar.css'
 function NavBarComponent({ loggedIn, _logout }) {
     return (
         <nav className="navbar navbar-light bg-dark">
+            <div className="logo">
+                    <img alt="logo" src={'./images/blogo.png'} link to="/"></img>
+                    </div>
             {loggedIn ?
                 <ul className="nav">
                     <li className="nav-item">

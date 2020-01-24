@@ -4,7 +4,7 @@ import './header.css'
 const HeaderComponent = props =>  {
 	let Greeting
 	if (props.user === null) {
-		Greeting = <p>Hello Guest</p>
+		Greeting = <h1>Welcome to Gig, the App For Some Extra Cash</h1>
 	} else if (props.user.firstName) {
 		Greeting = 
 			<p>
