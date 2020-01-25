@@ -6,23 +6,26 @@
 		"@material-ui/core": "^4.8.3",
 		"axios": "^0.19.0",
 		"bcryptjs": "^2.4.3",
-		"body-parser": "^1.17.2",
+		"body-parser": "^1.19.0",
+		"config": "^3.2.5",
 		"connect-mongo": "^3.2.0",
 		"dotenv": "^4.0.0",
-		"express": "^4.15.3",
+		"express": "^4.17.1",
 		"express-session": "^1.15.4",
-		"mongoose": "^5.8.1",
+		"mongoose": "^5.8.9",
 		"morgan": "^1.8.2",
 		"passport": "^0.3.2",
 		"passport-google-oauth": "^2.0.0",
 		"passport-google-oauth20": "^2.0.0",
-		"passport-local": "^1.0.0"
+		"passport-local": "^1.0.0",
+		"validation": "0.0.1"
 	},
 	"devDependencies": {
 		"concurrently": "^3.5.0",
 		"eslint": "^6.7.2",
 		"eslint-plugin-react": "^7.17.0",
 		"if-env": "^1.0.4",
+		"nodemon": "^2.0.2",
 		"react-scripts": "^3.3.0"
 	},
 	"scripts": {
@@ -34,7 +37,9 @@
 		"prod": "node server.js",
 		"heroku-postbuild": "npm run build",
 		"server": "nodemon server.js",
-		"seed": "node utils/scripts/seeds.js"
+		"seed": "node utils/scripts/seeds.js",
+		"app": "nodemon app.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"engines": {
 		"node": "12.13.0"
