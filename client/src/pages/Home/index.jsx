@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Header } from '../../components';
+import {OutlinedCard} from '../../components/OutlinedCard';
 import "./home.css";
 
 export default class Home extends Component {
@@ -25,7 +26,7 @@ export default class Home extends Component {
 						{JSON.stringify(this.props)}
 					</code>
 					<div>
-					
+					<OutlinedCard />
 				</div>
 				</div>
 				

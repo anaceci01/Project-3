@@ -5,6 +5,7 @@ import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import Home from './pages/Home'
 import { NavBar } from './components'
+import { OutlinedCard } from './components'
 
 class App extends Component {
 	constructor(props) {
@@ -89,9 +90,18 @@ class App extends Component {
 					exact path="/signup"
 					component={SignupForm}
 				/>
+				
+				<Route
+					exact path="/OutlinedCard"
+					component={OutlinedCard}
+				/>
+
 			</div>
 		)
 	}
 }
+
+
+  
 
 export default App
