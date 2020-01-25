@@ -5,6 +5,7 @@ import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import Home from './pages/Home'
 import { NavBar } from './components'
+import { OutlinedCard } from './components'
 import { CreateProfile } from './components'
 import { EditProfile } from './components'
 import { ProfilePage } from './components'
@@ -92,6 +93,12 @@ class App extends Component {
 					exact path="/signup"
 					component={SignupForm}
 				/>
+				
+				<Route
+					exact path="/OutlinedCard"
+					component={OutlinedCard}
+				/>
+
 				<Route
 					exact path="/create-profile"
 					component={CreateProfile}
@@ -108,5 +115,8 @@ class App extends Component {
 		)
 	}
 }
+
+
+  
 
 export default App
