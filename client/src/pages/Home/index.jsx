@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Header } from '../../components';
 import {OutlinedCard} from '../../components/OutlinedCard';
 import "./home.css";
+import { CreateProfile } from '../../components/CreateProfile'
+import { EditProfile } from '../../components/EditProfile'
+import { ProfilePage } from '../../components/ProfilePage'
 
 export default class Home extends Component {
 	constructor(props) {

@@ -6,6 +6,9 @@ import SignupForm from './pages/SignupForm'
 import Home from './pages/Home'
 import { NavBar } from './components'
 import { OutlinedCard } from './components'
+import { CreateProfile } from './components'
+import { EditProfile } from './components'
+import { ProfilePage } from './components'
 
 class App extends Component {
 	constructor(props) {
