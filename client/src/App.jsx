@@ -89,6 +89,18 @@ class App extends Component {
 					exact path="/signup"
 					component={SignupForm}
 				/>
+				<Route
+					exact path="/create-profile"
+					component={CreateProfile}
+				/>
+				<Route
+					exact path="/edit-profile"
+					component={EditProfile}
+				/>
+				<Route
+					exact path="/profile-page"
+					component={ProfilePage}
+				/>
 			</div>
 		)
 	}
