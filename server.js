@@ -1,5 +1,5 @@
 // Loading evnironmental variables here
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'node server.js') {
     console.log('loading dev environments')
     require('dotenv').config()
 }
@@ -27,6 +27,7 @@ app.use(
 app.use(bodyParser.json());
 
 app.use(express.static('./client/public/'));
+
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/projectthree", {
     useNewUrlParser: true,
