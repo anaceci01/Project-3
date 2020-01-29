@@ -26,7 +26,7 @@ app.use(
 )
 app.use(bodyParser.json());
 
-app.use(express.static('./client/public/'));
+app.use(express.static(path.join(__dirname, './client/public/')));
 
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/projectthree", {
